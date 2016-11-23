@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">网易云音乐</string>
+    <string name="open_string">打开</string>
+    <string name="close_string">关闭</string>
 </resources>

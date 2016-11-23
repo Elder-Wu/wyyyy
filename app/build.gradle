@@ -62,10 +62,6 @@ dependencies {
     //okhttp相关依赖
     compile 'com.squareup.okhttp3:okhttp:3.4.1'
     compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
-    //圆形ImageView
-    compile 'de.hdodenhof:circleimageview:2.1.0'
     //友盟统计
     compile 'com.umeng.analytics:analytics:latest.integration'
-    //沉浸式状态栏
-    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
 }

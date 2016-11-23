@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize">
+    android:layout_height="wrap_content"
+    android:background="#555555"
+    android:paddingTop="@dimen/toolbar_padding_top">
 
-</android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_general"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+    </RelativeLayout>
+</RelativeLayout>

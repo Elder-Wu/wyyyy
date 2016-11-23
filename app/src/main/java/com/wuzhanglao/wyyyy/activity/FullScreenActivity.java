@@ -13,10 +13,6 @@ public abstract class FullScreenActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        beforeSetContentView();
-        setContentView(setContentView());
-        afterSetContentView();
-        initView();
     }
 
     @Override
@@ -28,7 +24,6 @@ public abstract class FullScreenActivity extends BaseActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
 
-    @Override
     protected void afterSetContentView() {
     }
 }

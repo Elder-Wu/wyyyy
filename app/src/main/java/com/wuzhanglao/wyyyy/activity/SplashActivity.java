@@ -16,12 +16,8 @@ public class SplashActivity extends FullScreenActivity {
     private final Handler handler = new Handler();
 
     @Override
-    protected int setSystemBarColor() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            return getResources().getColor(R.color.transparent, null);
-        } else {
-            return getResources().getColor(R.color.transparent);
-        }
+    protected void doOnNext(Object o) {
+
     }
 
     @Override

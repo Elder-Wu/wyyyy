@@ -1,9 +1,9 @@
 package com.wuzhanglao.wyyyy.activity;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 
 import com.wuzhanglao.wyyyy.R;
 
@@ -13,23 +13,24 @@ import com.wuzhanglao.wyyyy.R;
 
 public abstract class ToolbarActivity extends BaseActivity {
 
+    private View toolbarRootView;
     private Toolbar toolbar;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        beforeSetContentView();
-        setContentView(setContentView());
-        afterSetContentView();
-        initDefaultToolBar();
-        initView();
     }
 
-    private void initDefaultToolBar() {
-        toolbar = (Toolbar) findViewById(R.id.activity_main_toolbar);
+    public void initDefaultToolBar() {
+        toolbarRootView = findViewById(R.id.activity_main_toolbar);
+        toolbar = (Toolbar) toolbarRootView.findViewById(R.id.toolbar_general);
     }
 
-    public Toolbar getDefaultToolbar(){
+    public Toolbar getDefaultToolbar() {
         return toolbar;
+    }
+
+    public View getDefaultToolbarRoot() {
+        return toolbarRootView;
     }
 }
