@@ -19,6 +19,6 @@
         android:name="com.wuzhanglao.wyyyy.fragment.NavigationFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginRight="100dp"
+        android:layout_gravity="start"
         tools:layout="@layout/fragment_navigation" />
 </android.support.v4.widget.DrawerLayout>
