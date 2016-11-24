@@ -23,7 +23,4 @@ public abstract class FullScreenActivity extends BaseActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
-
-    protected void afterSetContentView() {
-    }
 }
