@@ -1,5 +1,9 @@
 package com.wuzhanglao.wyyyy.utils;
 
+import android.content.Context;
+import android.os.Looper;
+import android.widget.Toast;
+
 /**
  * Created by wuming on 16/10/14.
  */
@@ -36,4 +40,15 @@ public class UIUtils {
         return (int) (spValue * fontScale + 0.5f);
     }
 
+    //全局Toast
+    public static void showToast(String msg) {
+        if (Looper.myLooper() == Looper.getMainLooper()) {
+            Toast.makeText(MyApplication.getInstance().getApplicationContext(), msg, Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    //指定界面Toast
+    public static void showToast(Context context, String msg) {
+        Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
+    }
 }

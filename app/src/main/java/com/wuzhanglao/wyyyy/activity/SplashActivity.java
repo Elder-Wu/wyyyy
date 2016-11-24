@@ -34,6 +34,6 @@ public class SplashActivity extends FullScreenActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 1000);
+        }, 2000);
     }
 }

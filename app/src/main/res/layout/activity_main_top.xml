@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_marginTop="@dimen/toolbar_padding_top">
+
+    <ImageView
+        android:id="@+id/top_icon1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/top_icon2"
+        android:src="@drawable/play" />
+
+    <ImageView
+        android:id="@+id/top_icon2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/play" />
+
+    <ImageView
+        android:id="@+id/top_icon3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/top_icon2"
+        android:src="@drawable/play" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/play" />
+</RelativeLayout>

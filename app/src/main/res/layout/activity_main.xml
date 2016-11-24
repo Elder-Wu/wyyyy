@@ -4,6 +4,7 @@
     android:id="@+id/activity_main_drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <!--主布局-->
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,9 +13,11 @@
         <include
             android:id="@+id/activity_main_toolbar"
             layout="@layout/toolbar_general" />
-    </RelativeLayout>
-    <!--展开之后的布局-->
 
+        <include layout="@layout/activity_main_top" />
+    </RelativeLayout>
+
+    <!--展开之后的布局-->
     <fragment
         android:name="com.wuzhanglao.wyyyy.fragment.NavigationFragment"
         android:layout_width="match_parent"
