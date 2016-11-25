@@ -4,13 +4,8 @@
     android:layout_height="wrap_content"
     android:paddingTop="@dimen/toolbar_padding_top">
 
-    <RelativeLayout
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_general"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar_general"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize" />
-    </RelativeLayout>
+        android:layout_height="?attr/actionBarSize" />
 </RelativeLayout>

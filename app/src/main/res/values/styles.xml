@@ -1,8 +1,9 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
+        <!-- 程序安装之后第一次打开初始化很慢，默认的statusbar是蓝色的 -->
+        <item name="android:colorPrimaryDark" tools:targetApi="lollipop">@color/white</item>
     </style>
 
 </resources>
